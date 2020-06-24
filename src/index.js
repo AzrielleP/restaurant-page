@@ -1,1 +1,9 @@
-alert("Hello");
+import  homePage  from './home.js';
+
+
+
+homePage.createHomePage();
+
+
+
+
