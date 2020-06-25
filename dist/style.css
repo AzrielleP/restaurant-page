@@ -40,6 +40,11 @@ header{
     font: 1.2em "Open Sans", sans-serif;
 }
 
+.navigation p:hover{
+    cursor: pointer;
+    color: #ffae52;
+}
+
 .home{
     color: #FF8C05;
     border-bottom: 3px solid #FF8C05;
@@ -79,6 +84,16 @@ header{
     font: 1.5em "Reem Kufi", sans-serif;
     color: #FF8C05;
     margin-bottom: 3em;
+}
+
+.viewMenu:hover{
+    color:white;
+    background-color: #FF8C05;
+}
+
+.viewMenu:focus,
+.viewMenu:active{
+    background-color: #ffae52;
 }
 
 .address,
@@ -162,5 +177,5 @@ footer{
     color: white;
     font: 1em "Reem Kufi", sans-serif;
     padding: 1em;
-    height: 3.5em;
+    height: 3.7em;
 }
