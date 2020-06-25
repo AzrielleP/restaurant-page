@@ -3,6 +3,7 @@ import homePage from './home.js';
 import menu from './menu.js';
 import about from './about.js'; 
 
+// Create the header of the page
 const Header = (() =>{
 
     let header = document.createElement("header")
@@ -55,13 +56,12 @@ const Restaurant = (() =>{
             deleteContents();
             menu.createMenuPage();
             changeLinkColor();
-                Header.menuLink.style.color = "#FF8C05";
-                Header.menuLink.style.borderBottom = "3px solid #FF8C05";
+            Header.menuLink.style.color = "#FF8C05";
+            Header.menuLink.style.borderBottom = "3px solid #FF8C05";
         })
     }
 
     const navigatePage = () => {
-
         Header.navigation.addEventListener("click", (event) =>{
             if(event.target !== event.currentTarget){
                 let target = event.target.className;
@@ -76,8 +76,8 @@ const Restaurant = (() =>{
                     about.createAboutPage();
                     about.createFooter();
                 }
-                // Change the color of all links to white and remove the bottom border
                 changeLinkColor();
+                // Assign a style to the clicked link.
                 event.target.style.color = "#FF8C05";
                 event.target.style.borderBottom = "3px solid #FF8C05";
             }
@@ -85,6 +85,7 @@ const Restaurant = (() =>{
         })
     }
 
+    // Change the color of the links to white and remove the bottom-border.
     const changeLinkColor = () =>{
         let links = Header.navigation.childNodes;
         for (let i=0; i<links.length; i++){
